@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(/images/gradient_image.jpg);
+    background-size: cover;
+}
+
+#box{
+    width: 600px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    margin: auto;
+    margin-top: 5%;
+    padding: 10px;
+    text-align: center;
+    padding:40xp; 
+    color: black;
+}
+
+#box h1{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#box h5{
+    display: inline;
+    padding: 2px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-width: 100%;
+}
+
+#box img{
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+#box li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+#box i{
+    color: black;
+    font-size: 40px;
+}
+
+#services{
+    text-align: center;
+    background: white;
+    margin: auto;
+    margin-top: 10%;
+    padding: 40px;
+}
+
+#services i{
+    color: black;
+    font-size: 150px;
+}
+
+.row{
+    padding: 40xp;
+}
+
+#services #services-mobile-view{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px){
+    #box{
+        max-width: 300px;
+        padding: 20px;
+    }
+
+    #services #services-mobile-view{
+        display: inline;
+    }
+
+    #services #services-desktop-view{
+        display: none;
+    }
+
+    #box h1{
+        font-size: 20px;
+    }
+
+    #box h5{
+        font-size: 13px;
+    }
+
+    #box img{
+        width: 170px;
+        height: 170px;
+    }
+}
+
