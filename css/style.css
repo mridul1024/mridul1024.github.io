@@ -103,3 +103,28 @@ ul{
     }
 }
 
+/*
+nav li a{
+    color: black!important;
+    font-size: 14px!important;
+}
+
+nav li{
+    display: inline!important;
+    padding-right: 15px!important;
+}
+*/
+
+nav a i{
+   /* color: black!important; */
+    font-size: 16px!important;
+}
+
+nav li a:hover{
+    color: black!important;
+    background: white!important;
+}
+
+.no-shadow{
+    box-shadow: none!important;
+}

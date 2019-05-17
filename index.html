@@ -5,12 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/style.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">        <title>Mridul Sharma</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">        
+        
+        <title>Mridul Sharma</title>
       </head>
       <body>
+
+        <!--===========normal nav=================-->
+        <div class="navbar-fixed">
+          
+        <nav class="nav grey darken-3 animated slideInDown">
+          <div class="container">
+              <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down" >  <!--style="font-family: Arial, Helvetica, sans-serif;"-->
+              <li><a href="#">HOME</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+            </ul>
+            </div>
+        </nav>
+        
+      </div>
+
+         <!--================side nav====================-->
+         <ul id="slide-out" class="sidenav" onclick="closeSidenav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+        </ul>
+
+       
 
         <!--============PROFILE AND CONTACT INFORMATION============-->
 
@@ -86,11 +114,26 @@
 
         
         <!--============PORTFOLIO============-->
+       <!--
         <section id="portfolio" class="section">
           <h3>PORTFOLIO</h3>
           
 
         </section>
+      -->
+        
+        <script>
+          const sideNav = document.querySelectorAll('.sidenav');
+          M.Sidenav.init(sideNav,{});
+
+          
+          var instance = M.Sidenav.getInstance(sideNav);
+
+          function closeSidenav(){
+            instance.close();
+          }
+          
+        </script>
 
       </body>
     </html>
