@@ -98,7 +98,7 @@
     
                   </div>
                 </div>
-               
+
                 <div class="container">
                   <div class="col s12">
                     <i class="fas fa-file-code"></i>
@@ -128,7 +128,11 @@
         <script>
           
           const sideNav = document.querySelector('.sidenav');
-          M.Sidenav.init(sideNav,{});
+          var instances = M.Sidenav.init(sideNav,{});
+
+          document.querySelector('.sidenav').addEventListener('click', function(){
+            instances.close();
+          });
 
         </script>
 
